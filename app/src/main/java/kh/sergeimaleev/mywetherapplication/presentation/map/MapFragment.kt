@@ -86,6 +86,11 @@ class MapFragment : BaseFragment<MapViewModel, FragmentMapBinding>(), OnMapReady
             ?: myLocation
             ?: return showToast("Location is not reachable. Try late... ")
 
+        map.moveCamera(
+            CameraUpdateFactory.newLatLngZoom(
+                LatLng(mCurrentLocation.latitude, mCurrentLocation.longitude), 10f
+            )
+        )
         getWeatherForecast(mCurrentLocation.latitude, mCurrentLocation.longitude)
     }
 
