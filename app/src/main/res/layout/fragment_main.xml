@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <kh.sergeimaleev.mywetherapplication.common.NonSwipeableViewPager
+            android:id="@+id/fragment_main_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_goneMarginStart="0dp">
+
+            <androidx.viewpager.widget.PagerTabStrip
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" />
+
+        </kh.sergeimaleev.mywetherapplication.common.NonSwipeableViewPager>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

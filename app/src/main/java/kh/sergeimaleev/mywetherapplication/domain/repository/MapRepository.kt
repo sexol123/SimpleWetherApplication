@@ -1,0 +1,3 @@
+package kh.sergeimaleev.mywetherapplication.domain.repository
+
+interface MapRepository

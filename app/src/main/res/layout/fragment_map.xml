@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/fragment_map_map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:liteMode="false"
+            app:cameraTilt="30"
+            app:cameraZoom="13"
+            app:mapType="normal"
+            app:uiRotateGestures="true"
+            app:uiScrollGestures="true"
+            app:uiZoomControls="true"
+            app:uiZoomGestures="true" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fragment_map_btn_map_get_weather"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_wb_sunny_black"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_map_btn_set_marker"
+            app:layout_constraintStart_toStartOf="@+id/fragment_map_map_view" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fragment_map_btn_map_type"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_map_black"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_map_btn_map_get_weather"
+            app:layout_constraintStart_toStartOf="@+id/fragment_map_map_view" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:visibility="gone"
+            android:id="@+id/fragment_map_btn_set_marker"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/ic_add_location_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

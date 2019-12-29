@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "871995930826",
+    "firebase_url": "https://wetherapplication-774ed.firebaseio.com",
+    "project_id": "wetherapplication-774ed",
+    "storage_bucket": "wetherapplication-774ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871995930826:android:554b257f10f6049fbc5c33",
+        "android_client_info": {
+          "package_name": "kh.sergeimaleev.mywetherapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871995930826-40ckvq3k86fqfntoofbrujokmt5699gc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvEtqK9Q4NXuA1U4BrPFSJ0S2tPNOmgCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871995930826-40ckvq3k86fqfntoofbrujokmt5699gc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
